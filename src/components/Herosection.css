@@ -1,0 +1,45 @@
+.HeroSectionWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 70vh; 
+    width: 100%;
+}
+
+.HeroSectionMain{
+    width: 80vw;
+    height: 60vh;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+}
+
+.Headphones{
+    width: 80vw;
+    height: 60vh;
+}
+
+.Logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    color: rgb(198, 195, 195);
+}
+
+.LogoInfo {
+    display: flex;
+    justify-content: center;
+    align-items:center; 
+    flex-direction: column;
+    margin-bottom: 2vh;
+}
+
+
+.AppleLogo{
+    height: 15vh;
+    width: 15vw;
+}
