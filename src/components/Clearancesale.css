@@ -1,0 +1,207 @@
+/* Main Sale Container */
+.sale-container {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    margin-left: 8vw; /* Ensuring everything starts from 10vw */
+    
+  }
+  
+  /* Sale Header (Today's + Color Block) */
+  .sale-header {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    gap: 10px;
+    
+  }
+  
+  /* Small Color Block */
+  .colordisplay {
+    width: 10px;
+    height: 20px;
+    background-color: #DB4444;
+    border-radius: 3px;
+  }
+  
+  /* "Today's" Text */
+  .today-sale {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #DB4444;
+  }
+  
+  /* Flash Sales + Timer + Arrows in Same Row */
+  .timezone {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px; /* Spacing between "Flash Sales" and Timer */
+    margin-top: 10px;
+  }
+  
+  /* Flash Sales Heading */
+  .timezone h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  /* Timer Box */
+  .timeinfo {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  /* Individual Time Box */
+  .timeLeft {
+    text-align: center;
+    background: #f8f8f8;
+    padding: 5px 10px;
+    border-radius: 5px;
+    min-width: 60px;
+  }
+  
+  /* Time Number */
+  .timeLeft h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #DB4444;
+  }
+  
+  /* Time Label (Days, Hours, etc.) */
+  .timeLeft p {
+    font-size: 0.9rem;
+    margin: 0;
+    color: #666;
+  }
+  
+  /* Arrow Navigation */
+  .arrows {
+    display: flex;
+    gap: 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: -10px; /* Adjusting alignment */
+  }
+  
+  /* Arrow Styling */
+  .arrows i {
+    color: #333;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .arrows i:hover {
+    color: #DB4444;
+  }
+  
+  /* Card Wrapper */
+  .card-wrapper {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Cards Container */
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  
+  /* Individual Card */
+  .card {
+    width: 250px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  /* Discount Badge */
+  .discount-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #DB4444;
+    color: white;
+    padding: 5px 8px;
+    font-size: 0.9rem;
+    border-radius: 3px;
+  }
+  
+  /* Product Image */
+  .card-image {
+    position: relative;
+    width: 100%;
+  }
+  
+  .card-image img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  /* Product Name */
+  .card-details h3 {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  
+  /* Price Section */
+  .price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.1rem;
+    margin-top: 5px;
+  }
+  
+  /* New Price */
+  .new-price {
+    color: #DB4444;
+    font-weight: bold;
+  }
+  
+  /* Old Price */
+  .old-price {
+    text-decoration: line-through;
+    color: gray;
+    font-size: 0.9rem;
+  }
+  
+  /* Rating Stars */
+  .rating {
+    font-size: 1rem;
+    color: gold;
+    margin-top: 5px;
+  }
+  
+  /* Responsive Adjustments */
+  @media screen and (max-width: 768px) {
+    .sale-container {
+      margin-left: 5vw;
+      width: 95%;
+    }
+  
+    .timezone {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 15px;
+    }
+  
+    .arrows {
+      margin-top: 10px;
+      justify-content: flex-start;
+    }
+  
+    .card-container {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  

@@ -1,0 +1,83 @@
+.heading {
+    margin-left: 9vw;
+    margin-top: 10vh;
+}
+
+/* Container for categories */
+.categories-container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    margin-top: 5vh;
+}
+
+/* Category Box */
+.category {
+    border: 1px solid gray;
+    width: 180px; 
+    height: 220px;  
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Circular Image */
+.category-image {
+    width: 100%;  
+    height: 100%;
+   background: none;
+    object-fit: cover;
+}
+
+/* Category Text */
+.category p {
+    margin-top: 10px;
+    font-size: 1rem;
+    
+    color: #333;
+}
+
+/* Hover Effect */
+.category:hover {
+    background-color: #00a8e8;
+    color: white;
+    border-color: white;
+    cursor: pointer;
+    border: 2px;
+}
+
+.category:hover p {
+    color: white;
+}
+
+.category:hover .category-image {
+    border-color: white;
+}
+
+.Speaker{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+}
+
+.Speakers{
+    width: 65vw;
+    height: 45vh;
+    border-radius: 10px;
+}
+
+.shopnow2 {
+    text-decoration: underline;
+    margin-top: 3vh;
+    font-size: 0.85rem;
+  }

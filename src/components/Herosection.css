@@ -1,0 +1,89 @@
+.HeroSectionWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    width: 100%;
+    padding: 1rem;
+}
+
+.HeroSectionMain {
+    width: 100%;
+    max-width: 1200px;
+    min-height: 60vh;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    overflow: hidden;
+}
+
+.Headphones {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: rgb(198, 195, 195);
+    padding: 2rem;
+    width: 50%;
+}
+
+.LogoInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+}
+
+.AppleLogo {
+    height: auto;
+    width: 100%;
+    max-width: 150px;
+}
+
+@media screen and (max-width: 768px) {
+    .HeroSectionMain {
+        flex-direction: column;
+    }
+
+    .Headphones, .Logo {
+        width: 100%;
+        height: auto;
+    }
+
+    .Logo {
+        padding: 1.5rem;
+    }
+
+    .LogoInfo {
+        gap: 0.75rem;
+    }
+
+    .AppleLogo {
+        max-width: 120px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .HeroSectionWrapper {
+        padding: 0.5rem;
+    }
+
+    .Logo {
+        padding: 1rem;
+    }
+
+    .AppleLogo {
+        max-width: 100px;
+    }
+}
